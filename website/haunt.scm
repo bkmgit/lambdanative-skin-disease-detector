@@ -64,7 +64,11 @@
   (static-page "Skin Disease Detector" "index.html"
     `((main (@ (class "wrap"))
 	    (div (@ (class "eyebrow"))
-	      (p "Healthcare research · Machine learning · Edge AI"))
+		(ul (@ (class "horizontal-nav")) 
+                    (li "Healthcare research")
+                    (li "Machine learning")
+                    (li "Edge AI")))
+
       (h1 "Skin Disease Detector")
       (p (@ (class "lead"))
 	 "An experimental skin disease image-classification application "
@@ -186,7 +190,11 @@
 	    "LICENSE")
 	 " file for details.")
 
-      (footer "Open Source · AI for Good · Built in Ghana")
+      (footer
+	(ul (@ (class "horizontal-nav")) 
+	  (li "Open Source")
+	  (li "AI for Good")
+	  (li "Built in Ghana")))
 
       ))))
 
